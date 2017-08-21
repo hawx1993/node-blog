@@ -1,4 +1,4 @@
-var mongodb = require('./db');
+const mongodb = require('./db');
 
 function Comment(name, day, title, comment) {
   this.name = name;

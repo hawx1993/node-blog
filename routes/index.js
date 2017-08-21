@@ -1,8 +1,8 @@
-var crypto = require('crypto'),
-    fs = require('fs'),
-    User = require('../models/user.js'),
-    Post = require('../models/post.js'),
-    Comment = require('../models/comment.js');
+const crypto = require('crypto');
+const fs = require('fs');
+const User = require('../models/user.js');
+const Post = require('../models/post.js');
+const Comment = require('../models/comment.js');
 
 module.exports = function(app) {
   app.get('/', function (req, res) {

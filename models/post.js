@@ -1,5 +1,5 @@
-var mongodb = require('./db'),
-    markdown = require('markdown').markdown;
+const mongodb = require('./db');
+const markdown = require('markdown').markdown;
 
 function Post(name, head, title, tags, post) {
   this.name = name;
@@ -13,9 +13,9 @@ module.exports = Post;
 
 //存储一篇文章及其相关信息
 Post.prototype.save = function(callback) {
-  var date = new Date();
-  //存储各种时间格式，方便以后扩展
-  var time = {
+  let date = new Date();
+  //存储各种时间格式
+  let time = {
       date: date,
       year : date.getFullYear(),
       month : date.getFullYear() + "-" + (date.getMonth() + 1),
@@ -24,7 +24,7 @@ Post.prototype.save = function(callback) {
       date.getHours() + ":" + (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes())
   }
   //要存入数据库的文档
-  var post = {
+  const post = {
       name: this.name,
       head: this.head,
       time: time,
