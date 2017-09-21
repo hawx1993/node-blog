@@ -162,3 +162,8 @@ $ npm install mongoose
 /logout ：登出
 ```
 我们要求 `/login` 和 `/reg` 只能是未登录的用户访问，而 `/post` 和 `/logout` 只能是已登录的用户访问。
+
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/gWs9P5H4YpntyAR6x1qG5EkX/hawx1993/node-blog'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/gWs9P5H4YpntyAR6x1qG5EkX/hawx1993/node-blog.svg' />
+</a>
